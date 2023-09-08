@@ -36,10 +36,10 @@ This is a sample ncnn yolov8 object segment android project, it depends on **ncn
 
 ## 3 Screenshot
 fp16 cpu infer
-![](./doc/fp16.gif)
+![](doc/fp16.gif)
 
 fp32 cpu infer
-![](./doc/fp16.gif)
+![](doc/fp16.gif)
 
 ## 4 Reference
 
