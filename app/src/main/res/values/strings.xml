@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ncnn-yolov8-seg</string>
+    <string-array name="model_array">
+        <item>best-sim-opt-fp16</item>
+        <item>best-sim-opt</item>
+<!--        <item>seal-fp32</item>-->
+
+    </string-array>
+    <string-array name="cpugpu_array">
+        <item>CPU</item>
+        <item>GPU</item>
+    </string-array>
+</resources>
