@@ -35,8 +35,11 @@ This is a sample ncnn yolov8 object segment android project, it depends on **ncn
 * FPS may be lower in dark environment because of longer camera exposure time.
 
 ## 3 Screenshot
+fp16 cpu infer
+![](./doc/fp16.gif)
 
-![](./doc/20230209114529.jpg)
+fp32 cpu infer
+![](./doc/fp16.gif)
 
 ## 4 Reference
 
