@@ -564,17 +564,17 @@ int Yolo::draw(cv::Mat& rgb, const std::vector<Object>& objects)
 //    };
 
     static const char* class_names[] = {
-          "Static Circle Seal",//常见圆形印章
-          "Dynamic 1 Triangle Seal",//动码倒三角印章
-          "Dynamic 1 Circle Seal",//动码在内的圆形印章
-          "Dynamic 2 Circle Seal",//环形动码圆形印章
-          "Dynamic 1 Elliptical Seal",//环形动码椭圆形印章
-          "Dynamic 1 Square Seal",//动码6字长方形印章
-          "Dynamic 2 Square Seal",//Dynamic 1 Square Seal
-          "Static Elliptical Seal",//常见椭圆印章'
-          "Dynamic Lozenge Seal",//动码菱形印章
-          "Static Square Seal",//常见4字正方形印章
-          "Dynamic 2 Triangle Seal",//动码11字正三角印章'
+          "Static Circle Seal",
+          "Dynamic 1 Triangle Seal",
+          "Dynamic 1 Circle Seal",
+          "Dynamic 2 Circle Seal",
+          "Dynamic 1 Elliptical Seal",
+          "Dynamic 1 Square Seal",
+          "Dynamic 2 Square Seal",
+          "Static Elliptical Seal",
+          "Dynamic Lozenge Seal",
+          "Static Square Seal",
+          "Dynamic 2 Triangle Seal",
     };
 //    static const char* class_names[] = {"blur", "phone", "reflectLight", "reflection"};
     static const unsigned char colors[12][3] = {
