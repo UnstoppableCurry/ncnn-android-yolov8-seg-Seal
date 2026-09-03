@@ -1,0 +1,51 @@
+# Official GitHub Pages workflow for static content:
+# https://github.com/actions/starter-workflows/blob/main/pages/static.yml
+name: Deploy static content to Pages
+
+on:
+  push:
+    branches: ["master"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Publish docs/ plus the verified recordings in doc/, not the Android tree.
+      - name: Assemble Pages site
+        run: |
+          set -euo pipefail
+          mkdir -p _site/results
+          cp -a docs/. _site/
+          cp doc/fp16.gif doc/fp32.gif _site/results/
+          test -f _site/index.html
+          test -f _site/results/fp16.gif
+          test -f _site/results/fp32.gif
+          touch _site/.nojekyll
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "_site"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
