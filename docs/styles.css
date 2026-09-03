@@ -273,6 +273,12 @@ code {
   font-size: 0.95rem;
 }
 
+.hero,
+.section,
+#main {
+  scroll-margin-top: 5.25rem;
+}
+
 .section {
   padding: 3.5rem 0;
 }
