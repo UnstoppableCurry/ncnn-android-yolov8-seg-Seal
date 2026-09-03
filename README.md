@@ -1,7 +1,8 @@
 # ncnn-yolov8-seg
 
+**结果展示（真机录屏，非浏览器演示）：** [https://unstoppablecurry.github.io/ncnn-android-yolov8-seg-Seal/](https://unstoppablecurry.github.io/ncnn-android-yolov8-seg-Seal/)
 
-This is a sample ncnn yolov8 object segment android project, it depends on **ncnn** library and **opencv**.
+This is a sample ncnn yolov8 object segment android project, it depends on **ncnn** library and **opencv**. Inference runs on Android (ncnn + NDK camera). It cannot run in a browser; the Pages site only shows the verified recordings below.
 
 [How to convert yolov8 model to ncnn model?](https://github.com/Digital2Slave/ncnn-android-yolov8-seg/wiki/Convert-yolov8-model-to-ncnn-model)
 
@@ -35,11 +36,14 @@ This is a sample ncnn yolov8 object segment android project, it depends on **ncn
 * FPS may be lower in dark environment because of longer camera exposure time.
 
 ## 3 Screenshot
+
+More context on the same recordings: [结果展示页](https://unstoppablecurry.github.io/ncnn-android-yolov8-seg-Seal/).
+
 fp16 cpu infer
 ![](doc/fp16.gif)
 
 fp32 cpu infer
-![](doc/fp16.gif)
+![](doc/fp32.gif)
 
 ## 4 Reference
 

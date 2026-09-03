@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>印章分割真机结果 · ncnn Android YOLOv8-seg</title>
+  <meta name="description" content="Android / ncnn 印章实例分割仓库的静态结果页。收录 README 已标注的 FP16 / FP32 CPU 真机录屏。推理在设备端运行，无法在浏览器中执行。本页不提供在线演示，也不公布未经仓库记录的精度或延迟数字。">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://unstoppablecurry.github.io/ncnn-android-yolov8-seg-Seal/">
+  <link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#f4efe6">
+  <meta name="color-scheme" content="light">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="ncnn-android-yolov8-seg-Seal">
+  <meta property="og:title" content="印章分割真机结果 · ncnn Android YOLOv8-seg">
+  <meta property="og:description" content="真机录屏展示，不是浏览器演示。页面只陈述 README 与源码中可核对的内容。">
+  <meta property="og:url" content="https://unstoppablecurry.github.io/ncnn-android-yolov8-seg-Seal/">
+  <meta property="og:image" content="https://unstoppablecurry.github.io/ncnn-android-yolov8-seg-Seal/media/og.jpg">
+  <meta property="og:image:alt" content="Android 应用对着显示器上的红色印章做实例分割的真机画面">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="印章分割真机结果 · ncnn Android YOLOv8-seg">
+  <meta name="twitter:description" content="Verified on-device recordings. Not an in-browser demo.">
+  <meta name="twitter:image" content="https://unstoppablecurry.github.io/ncnn-android-yolov8-seg-Seal/media/og.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://unstoppablecurry.github.io/ncnn-android-yolov8-seg-Seal/#webpage",
+        "url": "https://unstoppablecurry.github.io/ncnn-android-yolov8-seg-Seal/",
+        "name": "印章分割真机结果 · ncnn Android YOLOv8-seg",
+        "inLanguage": "zh-CN",
+        "description": "Android / ncnn 印章实例分割仓库的静态结果页。收录 README 已标注的 FP16 / FP32 CPU 真机录屏。无法在浏览器中运行。",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "ncnn-android-yolov8-seg-Seal",
+          "url": "https://unstoppablecurry.github.io/ncnn-android-yolov8-seg-Seal/"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://unstoppablecurry.github.io/ncnn-android-yolov8-seg-Seal/media/og.jpg"
+        }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "ncnn-android-yolov8-seg-Seal",
+        "codeRepository": "https://github.com/UnstoppableCurry/ncnn-android-yolov8-seg-Seal",
+        "url": "https://unstoppablecurry.github.io/ncnn-android-yolov8-seg-Seal/",
+        "programmingLanguage": ["C++", "Java"],
+        "runtimePlatform": "Android",
+        "description": "基于 ncnn 与 YOLOv8-seg 的 Android 印章实例分割示例项目。"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-seal" aria-hidden="true">印</span>
+        <span class="brand-text">
+          <span class="brand-title">印章分割</span>
+          <span class="brand-sub">ncnn · Android · YOLOv8-seg</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="页面章节">
+        <a href="#results">结果</a>
+        <a href="#precision">精度变体</a>
+        <a href="#architecture">结构</a>
+        <a href="#build">构建</a>
+        <a class="nav-repo" href="https://github.com/UnstoppableCurry/ncnn-android-yolov8-seg-Seal">仓库</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap">
+        <p class="eyebrow">结果展示 · 非在线演示</p>
+        <h1>真机录屏，不是浏览器推理。</h1>
+        <p class="lede">
+          这是 <a href="https://github.com/UnstoppableCurry/ncnn-android-yolov8-seg-Seal">ncnn-android-yolov8-seg-Seal</a>
+          的静态展示页。模型、相机与 ncnn 运行时都在 Android 设备上；本页不能、也不会在浏览器里跑网络。
+        </p>
+        <p class="lede en" lang="en">On-device seal instance segmentation. This page is a results gallery, not an interactive demo.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#results">查看已核实录屏</a>
+          <a class="btn btn-ghost" href="https://github.com/UnstoppableCurry/ncnn-android-yolov8-seg-Seal">打开 GitHub 仓库</a>
+        </div>
+        <aside class="truth-note" aria-label="页面边界说明">
+          <p><strong>本页只陈述仓库里写得出来的事实。</strong>不公布准确率、延迟、FPS 基准、客户或部署成效。界面上的 FPS 叠字属于录屏画面本身，不作性能结论。</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="results" aria-labelledby="results-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="section-index">01</p>
+          <h2 id="results-title">已核实结果</h2>
+          <p>两段 GIF 来自仓库 <code>doc/</code>，README「3 Screenshot」分别标注为 <strong>fp16 cpu infer</strong> 与 <strong>fp32 cpu infer</strong>。画面是手持手机拍摄显示器上的印章图；应用画出框、半透明掩膜和类别名。</p>
+        </header>
+
+        <div class="result-grid">
+          <figure class="result-card">
+            <figcaption class="result-meta">
+              <span class="stamp">FP16</span>
+              <div>
+                <h3>best-sim-opt-fp16 · CPU</h3>
+                <p>README：fp16 cpu infer · 文件 <a href="https://github.com/UnstoppableCurry/ncnn-android-yolov8-seg-Seal/blob/master/doc/fp16.gif"><code>doc/fp16.gif</code></a></p>
+              </div>
+            </figcaption>
+            <div class="frame" data-gif-frame>
+              <img
+                id="poster-fp16"
+                src="media/poster-fp16.jpg"
+                width="640"
+                height="360"
+                alt="FP16 CPU 真机录屏首帧：手机横向拍摄显示器上的红色圆形印章，应用叠了彩色分割掩膜与 Static Circle Seal 标签，侧栏可见 best-sim-opt-fp16 与 CPU。"
+                decoding="async">
+              <button
+                class="gif-trigger"
+                type="button"
+                data-gif="results/fp16.gif"
+                data-target="poster-fp16"
+                data-label="FP16 CPU 真机录屏">
+                加载录屏 GIF
+                <span>约 15.91 MiB · 640×360 · 约 17 秒</span>
+              </button>
+            </div>
+            <p class="result-foot">源文件 16,686,667 字节。点击后按需加载，避免页面默认拉取两段大图。</p>
+          </figure>
+
+          <figure class="result-card">
+            <figcaption class="result-meta">
+              <span class="stamp stamp-fp32">FP32</span>
+              <div>
+                <h3>best-sim-opt · CPU</h3>
+                <p>README：fp32 cpu infer · 文件 <a href="https://github.com/UnstoppableCurry/ncnn-android-yolov8-seg-Seal/blob/master/doc/fp32.gif"><code>doc/fp32.gif</code></a></p>
+              </div>
+            </figcaption>
+            <div class="frame" data-gif-frame>
+              <img
+                id="poster-fp32"
+                src="media/poster-fp32.jpg"
+                width="640"
+                height="360"
+                alt="FP32 CPU 真机录屏首帧：同一取景区，侧栏模型名为 best-sim-opt，后端为 CPU，画面上有多枚印章的框与彩色掩膜。"
+                decoding="async">
+              <button
+                class="gif-trigger"
+                type="button"
+                data-gif="results/fp32.gif"
+                data-target="poster-fp32"
+                data-label="FP32 CPU 真机录屏">
+                加载录屏 GIF
+                <span>约 16.45 MiB · 640×360 · 约 18 秒</span>
+              </button>
+            </div>
+            <p class="result-foot">源文件 17,251,546 字节。无 JavaScript 时可通过下方链接直接打开原 GIF。</p>
+          </figure>
+        </div>
+
+        <p class="noscript-links">
+          直接打开原文件：
+          <a href="results/fp16.gif">fp16.gif</a>
+          ·
+          <a href="results/fp32.gif">fp32.gif</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="precision" aria-labelledby="precision-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="section-index">02</p>
+          <h2 id="precision-title">FP16 与 FP32 在本仓库里指什么</h2>
+          <p>下面只对照资源名、界面选项和 README 标注。源码没有比较二者快慢或谁更准，本页也不补这一笔。</p>
+        </header>
+
+        <div class="compare">
+          <article class="compare-card">
+            <h3>FP16 变体</h3>
+            <dl>
+              <div><dt>界面选项</dt><dd><code>best-sim-opt-fp16</code></dd></div>
+              <div><dt>资源文件</dt><dd><code>best-sim-opt-fp16.param</code> + <code>best-sim-opt-fp16.bin</code></dd></div>
+              <div><dt>权重体积</dt><dd>6,532,564 字节（约 6.23 MiB）</dd></div>
+              <div><dt>README 录屏</dt><dd>fp16 cpu infer → <code>doc/fp16.gif</code></dd></div>
+            </dl>
+          </article>
+          <article class="compare-card">
+            <h3>FP32 变体</h3>
+            <dl>
+              <div><dt>界面选项</dt><dd><code>best-sim-opt</code></dd></div>
+              <div><dt>资源文件</dt><dd><code>best-sim-opt.param</code> + <code>best-sim-opt.bin</code></dd></div>
+              <div><dt>权重体积</dt><dd>13,041,076 字节（约 12.44 MiB）</dd></div>
+              <div><dt>README 录屏</dt><dd>fp32 cpu infer → <code>doc/fp32.gif</code></dd></div>
+            </dl>
+          </article>
+        </div>
+
+        <ul class="plain-list">
+          <li>加载入口在 <code>yolov8ncnn.cpp</code>：按 spinner 下标选择 <code>best-sim-opt-fp16</code> 或 <code>best-sim-opt</code>，再读 <code>{name}.param</code> / <code>{name}.bin</code>。</li>
+          <li>应用界面（<code>strings.xml</code>）提供这两个模型名，以及 <code>CPU</code> / <code>GPU</code> 后端开关。</li>
+          <li>GPU 路径在编译开启 <code>NCNN_VULKAN</code> 时设置 <code>use_vulkan_compute</code>；若选择 GPU 但 <code>get_gpu_count() == 0</code>，模型指针会被清空。</li>
+          <li>README 写明：多数小模型在 GPU 上往往慢于 CPU，这是常见现象——这是原项目说明，不是本印章模型的测速结论。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="architecture" aria-labelledby="architecture-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="section-index">03</p>
+          <h2 id="architecture-title">从代码读到的结构</h2>
+          <p>推断链写在 <code>ndkcamera</code>、<code>yolov8ncnn.cpp</code> 与 <code>yolo.cpp</code>。下列数字均来自默认参数或常量，不是评测报告。</p>
+        </header>
+
+        <ol class="pipeline">
+          <li>
+            <span>相机</span>
+            Android NDK Camera2（<code>camera2ndk</code> + <code>mediandk</code>）。README：使用 NDK 相机以追求效率；过旧设备若缺少 HAL3 可能崩溃。
+          </li>
+          <li>
+            <span>预处理</span>
+            RGB 帧按 <code>target_size = 640</code> 等比缩放，再 pad 到 32 的倍数（<code>MAX_STRIDE</code>）。<code>PIXEL_RGB2BGR</code>，均值按 0 减，归一化为 <code>1/255</code>。
+          </li>
+          <li>
+            <span>ncnn 网络</span>
+            输入 blob 名 <code>images</code>。输出 <code>output0</code>（检测）与 <code>output1</code>（mask proto）。param 文件与 JNI 抽取名称一致。
+          </li>
+          <li>
+            <span>解码</span>
+            网格步长 <code>8, 16, 32</code>；<code>num_class = 11</code>；DFL <code>reg_max = 16</code>；mask 特征 32 维。默认 <code>prob_threshold = 0.4</code>，<code>nms_threshold = 0.5</code>。
+          </li>
+          <li>
+            <span>掩膜</span>
+            <code>decode_mask</code>：特征与 proto 做 MatMul → Sigmoid → Reshape → 去 pad → 4× 上采样到原图。绘制时掩膜阈值 <code>0.5</code>。
+          </li>
+          <li>
+            <span>叠加</span>
+            画框、半透明类别色、英文类别名与分数。另有 10 帧滑动平均的 FPS 文字，仅供画面阅读，本页不引用其数值。
+          </li>
+        </ol>
+
+        <h3 class="subhead" id="classes-title">11 个类别名</h3>
+        <p class="section-lead">字符串原样取自 <code>Yolo::draw</code>。中文是对照翻译，不是另一套标签。</p>
+        <ol class="class-list">
+          <li><code>Static Circle Seal</code><span>静态圆形印章</span></li>
+          <li><code>Dynamic 1 Triangle Seal</code><span>动态单三角印章</span></li>
+          <li><code>Dynamic 1 Circle Seal</code><span>动态单圆印章</span></li>
+          <li><code>Dynamic 2 Circle Seal</code><span>动态双圆印章</span></li>
+          <li><code>Dynamic 1 Elliptical Seal</code><span>动态单椭圆印章</span></li>
+          <li><code>Dynamic 1 Square Seal</code><span>动态单方形印章</span></li>
+          <li><code>Dynamic 2 Square Seal</code><span>动态双方形印章</span></li>
+          <li><code>Static Elliptical Seal</code><span>静态椭圆印章</span></li>
+          <li><code>Dynamic Lozenge Seal</code><span>动态菱形印章</span></li>
+          <li><code>Static Square Seal</code><span>静态方形印章</span></li>
+          <li><code>Dynamic 2 Triangle Seal</code><span>动态双三角印章</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="notes" aria-labelledby="notes-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="section-index">04</p>
+          <h2 id="notes-title">README 里的运行说明</h2>
+          <p>摘自「2 Some notes」，不改原意。</p>
+        </header>
+        <ul class="plain-list">
+          <li>Android NDK 相机被用来追求效率。</li>
+          <li>过旧设备若缺少 HAL3 相机接口，可能崩溃。</li>
+          <li>所有模型都经过手工修改，以接受动态输入尺寸。</li>
+          <li>多数小模型在 GPU 上往往慢于 CPU，这是常见现象。</li>
+          <li>暗光下 FPS 可能更低，因为相机曝光时间更长。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="build" aria-labelledby="build-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="section-index">05</p>
+          <h2 id="build-title">如何在设备上运行</h2>
+          <p>完整步骤见 <a href="https://github.com/UnstoppableCurry/ncnn-android-yolov8-seg-Seal#1-how-to-build-and-run">仓库 README</a>。这里只列 CMake 与构建文件里写明的依赖。</p>
+        </header>
+        <ul class="plain-list">
+          <li>依赖 <strong>ncnn</strong> 与 <strong>opencv-mobile</strong>。CMake 示例路径为 <code>ncnn-20221128-android-vulkan</code>、<code>opencv-mobile-4.6.0-android</code>。</li>
+          <li>YOLOv8 转 ncnn 的说明在上游 wiki：<a href="https://github.com/Digital2Slave/ncnn-android-yolov8-seg/wiki/Convert-yolov8-model-to-ncnn-model">Convert yolov8 model to ncnn model</a>。</li>
+          <li>用 Android Studio 打开工程后编译安装。应用包名 <code>com.tencent.yolov8ncnn</code>，界面名 <code>ncnn-yolov8-seg</code>。</li>
+          <li><code>app/build.gradle</code>：<code>minSdkVersion 24</code>，ABI 仅 <code>arm64-v8a</code>。<code>AndroidManifest</code> 版本名 1.1，竖屏，申请 Camera 权限并声明 <code>camera2.full</code>。</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>源码文件头标注 Tencent ncnn 示例的 BSD 3-Clause。本页是该 Android 印章分割仓库的静态展示，不是官方产品站。</p>
+      <p class="refs">
+        README 引用：
+        <a href="https://github.com/ultralytics/ultralytics">ultralytics</a>
+        ·
+        <a href="https://github.com/Tencent/ncnn">ncnn</a>
+        ·
+        <a href="https://github.com/nihui/opencv-mobile">opencv-mobile</a>
+        ·
+        <a href="https://github.com/nihui/ncnn-android-nanodet">ncnn-android-nanodet</a>
+        ·
+        <a href="https://github.com/FeiGeChuanShu/ncnn-android-yolov8">ncnn-android-yolov8</a>
+      </p>
+      <p><a href="https://github.com/UnstoppableCurry/ncnn-android-yolov8-seg-Seal">github.com/UnstoppableCurry/ncnn-android-yolov8-seg-Seal</a></p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
